@@ -17,6 +17,8 @@ body {
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 section {
     scroll-margin: 50px;
@@ -201,10 +203,7 @@ color: white;
 
 /* responsive */
 
-@media (max-width: 344px)  {
-    body {
-        width: 344px;
-    }
+@media (max-width: 700px)  {
     .container {
         width: 280px;
         margin: 0 auto;
@@ -212,10 +211,9 @@ color: white;
     .hero-section {
         background-image: url(hero_image.png);
         height: 500px;
-        width: 344px;
      }
      nav ul li {
-        font-size: 7px;
+        font-size: 10px;
     }
      .hero-section h1 {
         font-size: 32px;
@@ -279,6 +277,15 @@ color: white;
     }
     .video-section h3 {
         font-size: 17px;
+    }
+    .gift-section{
+        flex-direction: column;
+    }
+    .gift-card img{
+        width: 100%;
+    }
+    .footer-upper .container {
+        flex-direction: column;
     }
 }
 
